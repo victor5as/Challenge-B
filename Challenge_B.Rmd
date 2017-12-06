@@ -8,6 +8,7 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, tidy = TRUE)
 ```
+Github address: \url{https://github.com/victor5as/Challenge-B}
 
 # Task 1B
 ## Step 1
@@ -64,7 +65,7 @@ train_rf <- randomForest(SalePrice ~ ., data = variables, importance = FALSE)
 ```
 
 We are going to provide three simple visualizations for our estimated "Random Forest". The first one shows the error rates (MSE in the leaves) after the regression as a function of the number of trees.
-```{r, fig.width = 5, fig.height = 4, fig.align = 'center'}
+```{r, fig.width = 5, fig.height = 3, fig.align = 'center'}
 plot(train_rf, main = "Error in our Random Forest")
 ```
 
