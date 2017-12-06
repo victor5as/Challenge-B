@@ -265,7 +265,7 @@ barplot(count, ylab = "Department identifier", horiz=T, cex.names = 0.7)
 
 
 ## Step 3
-Let us explain how we import Siren dataset. In order to import such a huge dataframe we use the function `fread()`, i.e., a similar function to `read.table but faster and more convenient. Concretely, `fread()` function, also described as the “fast and friendly file finagler”, is meant to import data from regular delimited files directly into R, without any detours or nonsense. Note that “regular” in this case means that every row of your data needs to have the same number of columns. Last, our laptop performed the task in about 5 minutes, but we wouldn't recommend it to our worst enemy.
+Let us explain how we import Siren dataset. In order to import such a huge dataframe we use the function `fread()`, i.e., a similar function to `read.table` but faster and more convenient. Concretely, `fread()` function, also described as the “fast and friendly file finagler”, is meant to import data from regular delimited files directly into R, without any detours or nonsense. Note that “regular” in this case means that every row of your data needs to have the same number of columns. Last, our laptop performed the task in about 5 minutes, but we wouldn't recommend it to our worst enemy.
 
 Then, after eliminating some duplicates of the Siren dataset, we merge it with Cnil data using `merge`, which just merge two data frames by common columns or row names, in our case column SIREN. 
 
